@@ -5,7 +5,7 @@ const tabs = [
   {
     name: 'About Me',
     content:
-      'Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now. I was born and raised in Albany, NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my 4-year-old twin daughters- Emma and Ella. Both of them are just starting school, so my calendar is usually blocked between 9–10 AM. This is a snippet of a biography or professional summary.',
+      'Hello! I’m Aman, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now. I was born and raised in Albany, NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my 4-year-old twin daughters- Emma and Ella. Both of them are just starting school, so my calendar is usually blocked between 9–10 AM. This is a snippet of a biography or professional summary.',
   },
   {
     name: 'Experiences',
@@ -34,14 +34,11 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
-      {/* Left Container (Blank for Desktop, Hidden on Mobile) */}
       <div className="hidden lg:block lg:w-1/2 bg-gray-900 p-6">
         <div className="w-full h-full bg-gray-700 border-2 border-gray-300 rounded-lg"></div>
       </div>
 
-      {/* Right Container (Full Screen on Mobile, Half Screen on Desktop) */}
       <div className="w-full lg:w-1/2 bg-gray-900 text-white p-6 flex flex-col space-y-6">
-        {/* Tabs Section */}
         <div className="bg-gray-800 p-4 rounded-lg shadow-lg mb-4">
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-20">
             {tabs.map((tab) => (
@@ -60,7 +57,7 @@ function App() {
           </div>
         </div>
 
-        {/* Content Section */}
+       
         <div className="flex-1 bg-gray-800 p-4 rounded-lg shadow-lg">
           <div className="text-gray-300 overflow-hidden">
             <div className="h-48 overflow-y-auto p-2">
@@ -69,7 +66,6 @@ function App() {
           </div>
         </div>
 
-        {/* Lower Section - Gallery */}
         <div className="flex-1 bg-gray-800 p-4 rounded-lg shadow-lg">
           <div className="flex justify-between items-center mb-4">
             <button className="text-xl font-semibold bg-black py-2 px-4 rounded-lg">
